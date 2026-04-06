@@ -1,0 +1,128 @@
+.App {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.voice-btn {
+  background-color: #f44336 !important; /* Kept red as requested */
+  color: white !important;
+  border: none !important;
+}
+
+.voice-btn:hover {
+  background-color: #d32f2f !important;
+}
+
+.submit-btn {
+  background-color: #4caf50 !important; /* Kept green as requested */
+  color: white !important;
+  border: none !important;
+  width: 100%;
+  max-width: 600px;
+}
+
+.submit-btn:hover {
+  background-color: #45a049 !important;
+}
+
+h2 {
+  color: #000000; /* Changed from purple to black */
+}
+
+/* Animations & Smoothness */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.loading-bar-container {
+  width: 100%;
+  max-width: 600px;
+  height: 6px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.loading-bar {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0%;
+  transition: width 0.3s ease;
+  animation: progress 2s infinite linear;
+}
+
+@keyframes progress {
+  0% { width: 0%; left: 0%; }
+  50% { width: 50%; left: 25%; }
+  100% { width: 100%; left: 100%; }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+button {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.card {
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.doctor-card.selected {
+  border-color: #2e7d32 !important;
+  background-color: #f1f8e9 !important;
+  box-shadow: 0 0 10px rgba(46, 125, 50, 0.2);
+}
+
+.doctor-list {
+  scrollbar-width: thin;
+  scrollbar-color: #4caf50 #f0f0f0;
+}
+

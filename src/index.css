@@ -1,0 +1,104 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Sab kuch white background aur black text (visible) */
+  color: #000000;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #ffffff; /* Explicitly white */
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background: #ffffff; /* White background */
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee; /* Added border for visibility */
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000; /* Black text */
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #f0f0f0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Border for visibility */
+  padding: 0.6em 1.2em;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff; /* White background for default buttons */
+  color: #000000; /* Black text */
+  cursor: pointer;
+  transition: all 0.25s;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #f9f9f9;
+}
+
+input, textarea, select {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1.1em;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.card {
+  padding: 2em;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin: 20px 0;
+  background: #ffffff; /* White background */
+  color: #000000; /* Black text */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Added subtle shadow */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  color: #000000;
+}
